@@ -1,76 +1,186 @@
 .clearfix:before, .clearfix:after {
   content: "";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
-.clearfix {
-  *zoom: 1;
-}
+  display: table; }
 
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+img {
+  max-width: 100%;
+  padding: 0;
+  margin: 0; }
 
 body {
-	background-color: #fff;
-	padding: 0;
-	margin: 0;
-}
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  color: black;
+  font-weight: 300; }
+
+ul {
+  list-style: none;
+  padding-left: 0; }
+
+h1 {
+  font-weight: 100;
+  color: white;
+  text-transform: uppercase; }
+  h1 a {
+    color: white; }
+
+h2, h3 {
+  font-weight: 100;
+  text-transform: lowercase; }
 
 a {
-	text-decoration: none;
-}
+  text-decoration: none;
+  color: black; }
 
 .wrapper {
-	margin: 0 auto;
-	padding: 0 5%;
-}
-.logo {
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 600;
-	text-transform: uppercase;
-	font-size: 1.1em;
-	text-align: center;
-	letter-spacing: 4px;
-	margin: 0 0 60px 0;
-}
-
-.logo a {
-	color: #111;
-	display: inline-block;
-
-}
-
-.nav a {
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 400;
-	color: #111;
-	font-size: 1.1em;
-	
-}
-
-.nav li {
-	display: inline-block;
-	margin: 0 3%;
-}
-.nav {
-	list-style: none;
-	text-align: center;
-	padding: 0;
-}
+  padding: 0 3%; }
 
 header {
-	padding: 75px 3% 40px 3%;
-	margin-bottom: 0px; 
+  background-color: black;
+  padding: 1.5em 0; }
+  header h1 {
+    text-align: center;
+    font-size: .9em;
+    letter-spacing: 4px; }
 
-}
+nav {
+  padding: 0 3%;
+  margin-bottom: 4em; }
+  nav ul {
+    margin: .3em 0; }
+  nav li {
+    padding: .55em 0;
+    border-bottom: 1px solid #bdbdbd;
+    letter-spacing: 1px; }
+    nav li a {
+      display: block; }
 
-.divider {
-	border-bottom: 1px solid #cdcdcd;
-	margin-bottom: 60px;
-}
+footer {
+  background-color: black;
+  padding: 1.5em 0; }
+  footer p {
+    text-align: center;
+    font-size: .6em;
+    letter-spacing: 4px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    color: white; }
 
-.pic {
-	margin-bottom: 60px;
-	max-width: 100%;
-	
-}
+h2 {
+  font-size: 1.85em; }
+
+.homeImages p {
+  margin-top: .5em;
+  margin-bottom: 2.5em;
+  font-size: 1.1em;
+  letter-spacing: 1px; }
+
+.oc .banner {
+  background: url(../images/ocBanner.jpg) no-repeat right;
+  background-size: contain;
+  margin-bottom: 3em; }
+  .oc .banner h2 {
+    margin-bottom: 4em; }
+
+.grok .banner {
+  background: url(../images/grokBanner.jpg) no-repeat right;
+  background-size: 200px 160px;
+  margin-bottom: 3em; }
+  .grok .banner h2 {
+    margin-bottom: 4em; }
+
+.cff .banner {
+  background: url(../images/cffBanner.jpg) no-repeat right;
+  background-size: 165px 172px;
+  margin-bottom: 3em; }
+  .cff .banner h2 {
+    margin-bottom: 2.5em; }
+
+.conquest .banner {
+  background: url(../images/conquestBanner.jpg) no-repeat right;
+  background-size: 167px 145px;
+  margin-bottom: 3em; }
+  .conquest .banner h2 {
+    margin-bottom: 2.5em; }
+
+.process .banner {
+  background: url(../images/processBanner.jpg) no-repeat right;
+  background-size: contain;
+  margin-bottom: 3em;
+  padding-bottom: 4.5em; }
+
+.contact .banner {
+  background: url(../images/contactBanner.jpg) no-repeat right;
+  background-size: contain;
+  margin-bottom: 3em;
+  padding-bottom: 4.5em; }
+
+.workSampleWrap img {
+  margin-bottom: 3em; }
+
+.projectDescr h3 {
+  font-size: 1.6em;
+  letter-spacing: 1px;
+  margin-bottom: .3em; }
+.projectDescr p {
+  line-height: 1.5;
+  margin-top: 0; }
+.projectDescr ul {
+  margin-top: 0; }
+.projectDescr li {
+  line-height: 1.5; }
+.projectDescr a {
+  text-transform: lowercase;
+  font-weight: 100;
+  font-size: 1.6em;
+  display: block;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-top: 1px solid #bdbdbd;
+  border-bottom: 1px solid #bdbdbd;
+  padding: .25em 0; }
+
+.prevNext {
+  position: relative;
+  padding: 1em; }
+  .prevNext .prev {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.1em;
+    letter-spacing: 4px; }
+  .prevNext .next {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.1em;
+    letter-spacing: 4px; }
+
+.process p {
+  line-height: 1.5; }
+.process .intro {
+  margin-bottom: 3em;
+  font-size: 1.1em; }
+.process .processSection {
+  padding: 2em 0;
+  border-top: 1px solid #bdbdbd; }
+  .process .processSection h3 {
+    margin-top: 0; }
+  .process .processSection p {
+    margin: 0; }
+
+.contact .intro {
+  font-size: 1.1em; }
+.contact .projectDescr li {
+  font-size: .8em; }
+
+/*# sourceMappingURL=styles.css.map */

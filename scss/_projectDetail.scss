@@ -1,0 +1,58 @@
+.workSampleWrap {
+	img {
+		margin-bottom: 3em;
+	}
+}
+
+.projectDescr {
+	h3 {
+		font-size: 1.6em;
+		letter-spacing: 1px;
+		margin-bottom: .3em;
+	}
+
+	p {
+		line-height: 1.5;
+		margin-top: 0;
+	}
+	
+	ul {
+		margin-top: 0;
+	}
+	li {
+		line-height: 1.5;
+	}
+
+	a {
+		text-transform: lowercase;
+		font-weight: 100;
+		font-size: 1.6em;
+		display: block;
+		text-align: center;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		border-top: 1px solid $gray; 
+		border-bottom: 1px solid $gray; 
+		padding: .25em 0;
+	}
+}
+
+.prevNext {
+	position: relative;
+	padding: 1em;
+	
+	.prev {
+		position: absolute;
+		left: 0;
+		top: 0;
+		font-size: 1.1em;
+		letter-spacing: 4px;
+	}
+	.next {
+		position: absolute;
+		right: 0;
+		top: 0;
+		font-size: 1.1em;
+		letter-spacing: 4px;
+	}
+}
