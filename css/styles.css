@@ -25,7 +25,7 @@ ul {
   padding-left: 0; }
 
 h1 {
-  font-weight: 100;
+  font-weight: 300;
   color: white;
   text-transform: uppercase; }
   h1 a {
@@ -41,6 +41,9 @@ a {
 
 .wrapper {
   padding: 0 3%; }
+  @media (min-width: 535px) {
+    .wrapper {
+      padding-left: 30%; } }
 
 header {
   background-color: black;
@@ -82,6 +85,10 @@ h2 {
   margin-bottom: 2.5em;
   font-size: 1.1em;
   letter-spacing: 1px; }
+@media (min-width: 420px) {
+  .homeImages img {
+    display: inline-block;
+    width: 50%; } }
 
 .oc .banner {
   background: url(../images/ocBanner.jpg) no-repeat right;

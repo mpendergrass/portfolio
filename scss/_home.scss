@@ -10,4 +10,11 @@ h2 {
 		letter-spacing: 1px;
 	}
 	
+
+	img {
+		@include breakpoint($small) {
+			display: inline-block;
+			width: 50%;
+		}
+	}
 }
