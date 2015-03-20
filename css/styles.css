@@ -296,9 +296,11 @@ h2 {
   margin-top: 0; }
 .projectDescr li {
   line-height: 1.5; }
+.projectDescr .linkTitle {
+  font-size: 1.18em; }
 .projectDescr a {
   text-transform: lowercase;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1.6em;
   display: block;
   text-align: center;
