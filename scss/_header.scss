@@ -10,11 +10,19 @@ header {
 			text-align: left;
 		}
 	}
+
+	@include breakpoint($med){
+		margin-bottom: 4em;
+	}
 }
 
 nav {
 	padding: 0 3%;
 	margin-bottom: 4em;
+
+	@include breakpoint($large){
+		padding: 0 7%;
+	}
 	
 	ul {
 		margin: .3em 0;

@@ -26,7 +26,7 @@ body {
 @media (min-width: 535px) {
   nav {
     position: absolute;
-    top: 100px;
+    top: 130px;
     left: 0; } }
 
 ul {
@@ -52,7 +52,10 @@ a {
   padding: 0 3%; }
   @media (min-width: 535px) {
     .wrapper {
-      padding-left: 30%; } }
+      padding-left: 25%; } }
+  @media (min-width: 950px) {
+    .wrapper {
+      padding-right: 7%; } }
 
 header {
   background-color: black;
@@ -64,10 +67,16 @@ header {
     @media (min-width: 535px) {
       header h1 {
         text-align: left; } }
+  @media (min-width: 535px) {
+    header {
+      margin-bottom: 4em; } }
 
 nav {
   padding: 0 3%;
   margin-bottom: 4em; }
+  @media (min-width: 950px) {
+    nav {
+      padding: 0 7%; } }
   nav ul {
     margin: .3em 0; }
     @media (min-width: 535px) {
@@ -85,18 +94,37 @@ nav {
 
 footer {
   background-color: black;
-  padding: 1.5em 0; }
+  padding: 1.5em 0;
+  position: relative; }
   footer p {
     text-align: center;
-    font-size: .6em;
+    font-size: .75em;
     letter-spacing: 4px;
     font-weight: 300;
     text-transform: uppercase;
-    text-align: center;
     color: white; }
     @media (min-width: 535px) {
       footer p {
         text-align: left; } }
+  footer .top {
+    margin-bottom: 1.5em;
+    color: #bdbdbd;
+    letter-spacing: 4px;
+    text-align: center;
+    display: block; }
+    @media (min-width: 535px) {
+      footer .top {
+        display: inline-block;
+        position: absolute;
+        right: 3%;
+        bottom: 12px;
+        -webkit-transition: color 0.4s ease;
+        -moz-transition: color 0.4s ease;
+        -ms-transition: color 0.4s ease;
+        -o-transition: color 0.4s ease;
+        transition: color 0.4s ease; }
+        footer .top:hover {
+          color: white; } }
 
 h2 {
   font-size: 1.85em; }
@@ -127,68 +155,122 @@ h2 {
   background: url(../images/ocBanner.jpg) no-repeat right;
   background-size: contain;
   margin-bottom: 3em; }
+  @media (min-width: 590px) {
+    .oc .banner {
+      margin-bottom: 5em; } }
   .oc .banner h2 {
     margin-bottom: 4em; }
     @media (min-width: 535px) {
       .oc .banner h2 {
         font-size: 2.2em; } }
+    @media (min-width: 750px) {
+      .oc .banner h2 {
+        font-size: 2.5em;
+        margin-bottom: 5em; } }
 
 .grok .banner {
   background: url(../images/grokBanner.jpg) no-repeat right;
   background-size: 200px 160px;
   margin-bottom: 3em; }
+  @media (min-width: 590px) {
+    .grok .banner {
+      background-size: contain;
+      margin-bottom: 5em; } }
   .grok .banner h2 {
     margin-bottom: 4em; }
     @media (min-width: 535px) {
       .grok .banner h2 {
         font-size: 2.2em; } }
+    @media (min-width: 750px) {
+      .grok .banner h2 {
+        font-size: 2.5em;
+        margin-bottom: 5em; } }
 
 .cff .banner {
   background: url(../images/cffBanner.jpg) no-repeat right;
   background-size: 165px 172px;
   margin-bottom: 3em; }
+  @media (min-width: 590px) {
+    .cff .banner {
+      background-size: contain;
+      margin-bottom: 5em; } }
   .cff .banner h2 {
     margin-bottom: 2.5em; }
     @media (min-width: 535px) {
       .cff .banner h2 {
         font-size: 2.2em; } }
+    @media (min-width: 750px) {
+      .cff .banner h2 {
+        font-size: 2.5em;
+        margin-bottom: 3em; } }
 
 .conquest .banner {
   background: url(../images/conquestBanner.jpg) no-repeat right;
   background-size: 167px 145px;
   margin-bottom: 3em; }
+  @media (min-width: 590px) {
+    .conquest .banner {
+      background-size: contain;
+      margin-bottom: 5em; } }
   .conquest .banner h2 {
     margin-bottom: 2.5em; }
     @media (min-width: 535px) {
       .conquest .banner h2 {
         font-size: 2.2em; } }
+    @media (min-width: 750px) {
+      .conquest .banner h2 {
+        font-size: 2.5em;
+        margin-bottom: 5em; } }
 
 .process .banner {
   background: url(../images/processBanner.jpg) no-repeat right;
   background-size: contain;
   margin-bottom: 3em;
   padding-bottom: 4.5em; }
+  @media (min-width: 590px) {
+    .process .banner {
+      margin-bottom: 5em;
+      padding-bottom: 7.5em; } }
   @media (min-width: 535px) {
     .process .banner h2 {
       font-size: 2.2em; } }
+  @media (min-width: 750px) {
+    .process .banner h2 {
+      font-size: 2.5em;
+      margin-bottom: 2em; } }
 
 .contact .banner {
   background: url(../images/contactBanner.jpg) no-repeat right;
   background-size: contain;
   margin-bottom: 3em;
   padding-bottom: 4.5em; }
+  @media (min-width: 590px) {
+    .contact .banner {
+      margin-bottom: 5em;
+      padding-bottom: 7.5em; } }
   @media (min-width: 535px) {
     .contact .banner h2 {
       font-size: 2.2em; } }
+  @media (min-width: 750px) {
+    .contact .banner h2 {
+      font-size: 2.5em;
+      margin-bottom: 2em; } }
 
 .banner p {
   font-size: 1.2em; }
   @media (min-width: 535px) {
     .banner p {
       font-size: 1.35em; } }
+  @media (min-width: 590px) {
+    .banner p {
+      font-size: 1.5em; } }
 
 .workSampleWrap img {
   margin-bottom: 3em; }
+@media (min-width: 750px) {
+  .workSampleWrap {
+    width: 55%;
+    display: inline-block; } }
 
 .projectDescr h3 {
   font-size: 1.6em;
@@ -211,7 +293,33 @@ h2 {
   margin-bottom: 1em;
   border-top: 1px solid #bdbdbd;
   border-bottom: 1px solid #bdbdbd;
-  padding: .25em 0; }
+  padding: .25em 0;
+  -webkit-transition: color 0.4s ease;
+  -moz-transition: color 0.4s ease;
+  -ms-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease;
+  transition: color 0.4s ease; }
+  @media (min-width: 535px) {
+    .projectDescr a:hover {
+      color: #bdbdbd; } }
+  @media (min-width: 750px) {
+    .projectDescr a {
+      display: inline-block;
+      text-align: left;
+      border-top: none;
+      padding: .1em 0; } }
+@media (min-width: 750px) {
+  .projectDescr {
+    width: 35%;
+    display: inline-block;
+    margin-left: 6%;
+    vertical-align: top; }
+    .projectDescr h3 {
+      margin-top: 0; }
+    .projectDescr p {
+      margin-bottom: 3em; }
+    .projectDescr .execution {
+      margin-bottom: 3em; } }
 
 .prevNext {
   position: relative;
@@ -221,13 +329,31 @@ h2 {
     left: 0;
     top: 0;
     font-size: 1.1em;
-    letter-spacing: 4px; }
+    letter-spacing: 4px;
+    color: #bdbdbd;
+    -webkit-transition: color 0.4s ease;
+    -moz-transition: color 0.4s ease;
+    -ms-transition: color 0.4s ease;
+    -o-transition: color 0.4s ease;
+    transition: color 0.4s ease; }
+    @media (min-width: 535px) {
+      .prevNext .prev:hover {
+        color: black; } }
   .prevNext .next {
     position: absolute;
     right: 0;
     top: 0;
     font-size: 1.1em;
-    letter-spacing: 4px; }
+    letter-spacing: 4px;
+    color: #bdbdbd;
+    -webkit-transition: color 0.4s ease;
+    -moz-transition: color 0.4s ease;
+    -ms-transition: color 0.4s ease;
+    -o-transition: color 0.4s ease;
+    transition: color 0.4s ease; }
+    @media (min-width: 535px) {
+      .prevNext .next:hover {
+        color: black; } }
 
 .process p {
   line-height: 1.5; }

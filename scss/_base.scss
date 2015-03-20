@@ -34,7 +34,7 @@ body {
 nav {
 	@include breakpoint($med) {
 		position: absolute;
-		top: 100px;
+		top: 130px;
 		left: 0;
 	}
 }
@@ -68,6 +68,10 @@ a {
 	padding: 0 3%;
 
 	@include breakpoint($med) {
-		padding-left: 30%;
+		padding-left: 25%;
+	}
+
+	@include breakpoint($large) {
+		padding-right: 7%;
 	}
 }

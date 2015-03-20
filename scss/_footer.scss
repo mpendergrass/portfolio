@@ -1,17 +1,42 @@
 footer {
 	background-color: black;
 	padding: 1.5em 0;
+	position: relative;
+
 	p {
 		text-align: center;
-		font-size: .6em;
+		font-size: .75em;
 		letter-spacing: 4px;
 		font-weight: 300;
 		text-transform: uppercase;
-		text-align: center;
 		color: white;
 
 		@include breakpoint($med){
 			text-align: left;
+		}
+	}
+
+
+
+	.top {
+		
+		margin-bottom: 1.5em;
+		color: $gray;
+		letter-spacing: 4px;
+		text-align: center;
+		display: block;
+
+		@include breakpoint($med){
+			display: inline-block;
+			position: absolute;
+			right: 3%;
+			bottom: 12px;
+
+			@include transition(color, .4s, ease);
+
+			&:hover{
+				color: white;
+			}
 		}
 	}
 }

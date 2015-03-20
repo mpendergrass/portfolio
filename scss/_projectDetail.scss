@@ -2,6 +2,11 @@
 	img {
 		margin-bottom: 3em;
 	}
+
+	@include breakpoint($xmed){
+		width: 55%;
+		display: inline-block;
+	}
 }
 
 .projectDescr {
@@ -34,12 +39,48 @@
 		border-top: 1px solid $gray; 
 		border-bottom: 1px solid $gray; 
 		padding: .25em 0;
+
+
+		@include transition(color, .4s, ease);
+
+		@include breakpoint($med){
+			&:hover{
+				color: $gray;
+			}
+		}
+		
+		@include breakpoint($xmed){
+			display: inline-block;
+			text-align: left;
+			border-top: none;
+			padding: .1em 0;
+		}
+	}
+
+	@include breakpoint($xmed){
+		width: 35%;
+		display: inline-block;
+		margin-left: 6%;
+		vertical-align: top;
+
+		h3 {
+			margin-top: 0;
+		}
+
+		p {
+			margin-bottom: 3em;
+		}
+
+		.execution {
+			margin-bottom: 3em;
+		}
 	}
 }
 
 .prevNext {
 	position: relative;
 	padding: 1em;
+
 	
 	.prev {
 		position: absolute;
@@ -47,6 +88,14 @@
 		top: 0;
 		font-size: 1.1em;
 		letter-spacing: 4px;
+		color: $gray;
+		@include transition(color, .4s, ease);
+		
+		@include breakpoint($med){
+			&:hover{
+				color: black;
+			}
+		}
 	}
 	.next {
 		position: absolute;
@@ -54,5 +103,13 @@
 		top: 0;
 		font-size: 1.1em;
 		letter-spacing: 4px;
+		color: $gray;
+		@include transition(color, .4s, ease);
+
+		@include breakpoint($med){
+			&:hover{
+				color: black;
+			}
+		}
 	}
 }
