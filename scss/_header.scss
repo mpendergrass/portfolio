@@ -36,16 +36,23 @@ nav {
 		padding: .55em 0;
 		border-bottom: 1px solid $gray;
 		letter-spacing: 1px;
+		font-size: 1.1em;
 
 		@include breakpoint($med){
-			border: none;
-
+			border: none;			
 		}
+	}
 
 		a {
 			display: block;
+			@include breakpoint($med){
 
+				@include transition(color, .4s, ease);
+			
+				&:hover {
+					color: $gray;
+				}
+			}
 		}
-	}
 
 }

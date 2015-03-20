@@ -26,7 +26,7 @@ body {
 @media (min-width: 535px) {
   nav {
     position: absolute;
-    top: 130px;
+    top: 141px;
     left: 0; } }
 
 ul {
@@ -85,12 +85,22 @@ nav {
   nav li {
     padding: .55em 0;
     border-bottom: 1px solid #bdbdbd;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    font-size: 1.1em; }
     @media (min-width: 535px) {
       nav li {
         border: none; } }
-    nav li a {
-      display: block; }
+  nav a {
+    display: block; }
+    @media (min-width: 535px) {
+      nav a {
+        -webkit-transition: color 0.4s ease;
+        -moz-transition: color 0.4s ease;
+        -ms-transition: color 0.4s ease;
+        -o-transition: color 0.4s ease;
+        transition: color 0.4s ease; }
+        nav a:hover {
+          color: #bdbdbd; } }
 
 footer {
   background-color: black;

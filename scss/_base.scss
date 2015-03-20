@@ -34,7 +34,7 @@ body {
 nav {
 	@include breakpoint($med) {
 		position: absolute;
-		top: 130px;
+		top: 141px;
 		left: 0;
 	}
 }
