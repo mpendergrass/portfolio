@@ -19,6 +19,15 @@ body {
   font-family: "Josefin Sans", sans-serif;
   color: black;
   font-weight: 300; }
+  @media (min-width: 535px) {
+    body {
+      position: relative; } }
+
+@media (min-width: 535px) {
+  nav {
+    position: absolute;
+    top: 100px;
+    left: 0; } }
 
 ul {
   list-style: none;
@@ -32,7 +41,7 @@ h1 {
     color: white; }
 
 h2, h3 {
-  font-weight: 100;
+  font-weight: 300;
   text-transform: lowercase; }
 
 a {
@@ -52,16 +61,25 @@ header {
     text-align: center;
     font-size: .9em;
     letter-spacing: 4px; }
+    @media (min-width: 535px) {
+      header h1 {
+        text-align: left; } }
 
 nav {
   padding: 0 3%;
   margin-bottom: 4em; }
   nav ul {
     margin: .3em 0; }
+    @media (min-width: 535px) {
+      nav ul {
+        width: 25%; } }
   nav li {
     padding: .55em 0;
     border-bottom: 1px solid #bdbdbd;
     letter-spacing: 1px; }
+    @media (min-width: 535px) {
+      nav li {
+        border: none; } }
     nav li a {
       display: block; }
 
@@ -72,10 +90,13 @@ footer {
     text-align: center;
     font-size: .6em;
     letter-spacing: 4px;
-    font-weight: 100;
+    font-weight: 300;
     text-transform: uppercase;
     text-align: center;
     color: white; }
+    @media (min-width: 535px) {
+      footer p {
+        text-align: left; } }
 
 h2 {
   font-size: 1.85em; }
@@ -85,10 +106,22 @@ h2 {
   margin-bottom: 2.5em;
   font-size: 1.1em;
   letter-spacing: 1px; }
-@media (min-width: 420px) {
-  .homeImages img {
+@media (min-width: 535px) {
+  .homeImages {
+    width: 46%;
     display: inline-block;
-    width: 50%; } }
+    vertical-align: top;
+    -webkit-transition: opacity 0.4s ease;
+    -moz-transition: opacity 0.4s ease;
+    -ms-transition: opacity 0.4s ease;
+    -o-transition: opacity 0.4s ease;
+    transition: opacity 0.4s ease; }
+    .homeImages:hover {
+      opacity: .8; } }
+
+@media (min-width: 535px) {
+  .homeRight {
+    margin-left: 6%; } }
 
 .oc .banner {
   background: url(../images/ocBanner.jpg) no-repeat right;
@@ -96,6 +129,9 @@ h2 {
   margin-bottom: 3em; }
   .oc .banner h2 {
     margin-bottom: 4em; }
+    @media (min-width: 535px) {
+      .oc .banner h2 {
+        font-size: 2.2em; } }
 
 .grok .banner {
   background: url(../images/grokBanner.jpg) no-repeat right;
@@ -103,6 +139,9 @@ h2 {
   margin-bottom: 3em; }
   .grok .banner h2 {
     margin-bottom: 4em; }
+    @media (min-width: 535px) {
+      .grok .banner h2 {
+        font-size: 2.2em; } }
 
 .cff .banner {
   background: url(../images/cffBanner.jpg) no-repeat right;
@@ -110,6 +149,9 @@ h2 {
   margin-bottom: 3em; }
   .cff .banner h2 {
     margin-bottom: 2.5em; }
+    @media (min-width: 535px) {
+      .cff .banner h2 {
+        font-size: 2.2em; } }
 
 .conquest .banner {
   background: url(../images/conquestBanner.jpg) no-repeat right;
@@ -117,18 +159,33 @@ h2 {
   margin-bottom: 3em; }
   .conquest .banner h2 {
     margin-bottom: 2.5em; }
+    @media (min-width: 535px) {
+      .conquest .banner h2 {
+        font-size: 2.2em; } }
 
 .process .banner {
   background: url(../images/processBanner.jpg) no-repeat right;
   background-size: contain;
   margin-bottom: 3em;
   padding-bottom: 4.5em; }
+  @media (min-width: 535px) {
+    .process .banner h2 {
+      font-size: 2.2em; } }
 
 .contact .banner {
   background: url(../images/contactBanner.jpg) no-repeat right;
   background-size: contain;
   margin-bottom: 3em;
   padding-bottom: 4.5em; }
+  @media (min-width: 535px) {
+    .contact .banner h2 {
+      font-size: 2.2em; } }
+
+.banner p {
+  font-size: 1.2em; }
+  @media (min-width: 535px) {
+    .banner p {
+      font-size: 1.35em; } }
 
 .workSampleWrap img {
   margin-bottom: 3em; }

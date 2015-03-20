@@ -10,11 +10,21 @@ h2 {
 		letter-spacing: 1px;
 	}
 	
+	@include breakpoint($med) {
+		width: 46%;
+		display: inline-block;
+		vertical-align: top;
+		
+		@include transition (opacity, .4s, ease);
 
-	img {
-		@include breakpoint($small) {
-			display: inline-block;
-			width: 50%;
+		&:hover {
+			opacity: .8;
 		}
+	}
+}
+
+.homeRight {
+	@include breakpoint($med) {
+		margin-left: 6%;
 	}
 }

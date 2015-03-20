@@ -5,22 +5,39 @@ header {
 		text-align: center;
 		font-size: .9em;
 		letter-spacing: 4px;
+
+		@include breakpoint($med) {
+			text-align: left;
+		}
 	}
 }
 
 nav {
 	padding: 0 3%;
 	margin-bottom: 4em;
+	
 	ul {
 		margin: .3em 0;
+
+		@include breakpoint($med) {
+			width: 25%;
+		}
 	}
+
 	li {
 		padding: .55em 0;
 		border-bottom: 1px solid $gray;
 		letter-spacing: 1px;
 
+		@include breakpoint($med){
+			border: none;
+
+		}
+
 		a {
 			display: block;
+
 		}
 	}
+
 }

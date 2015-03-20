@@ -25,14 +25,25 @@ body {
 	font-family: $font;
 	color: black;
 	font-weight: 300;
+
+	@include breakpoint($med){
+		position: relative;
+	}
 }
 
+nav {
+	@include breakpoint($med) {
+		position: absolute;
+		top: 100px;
+		left: 0;
+	}
+}
 
 ul {
 	list-style: none;
 	padding-left: 0; 
-
 }
+
 h1 {
 	font-weight: 300;
 	color: white;
@@ -44,7 +55,7 @@ h1 {
 }
 
 h2, h3 {
-	font-weight: 100;
+	font-weight: 300;
 	text-transform: lowercase;
 }
 a {
