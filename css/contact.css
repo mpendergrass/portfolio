@@ -1,6 +1,8 @@
 .contact .intro {
-  font-size: 1.1em; }
-.contact .projectDescr li {
-  font-size: .8em; }
+  font-size: 1.2em; }
+.contact .projectDescr a {
+  font-size: 1.2em;
+  font-weight: 300;
+  padding-bottom: .05em; }
 
 /*# sourceMappingURL=contact.css.map */

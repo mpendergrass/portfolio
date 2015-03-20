@@ -123,23 +123,22 @@
 	background: url(../images/contactBanner.jpg) no-repeat right;
 	background-size: contain;
 	margin-bottom: 3em;
-	padding-bottom: 4.5em;
-
+	
 	@include breakpoint($awk){
+		background-size: contain;
 		margin-bottom: 5em;
-		padding-bottom: 7.5em;
 	}
 
+	h2 {
+		margin-bottom: 2.5em;
 
-	h2{
 		@include breakpoint($med){
 			font-size: 2.2em;
 		}
 
 		@include breakpoint($xmed){
 			font-size: 2.5em;
-			margin-bottom: 2em;
-
+			margin-bottom: 4em;
 		}
 	}
 	

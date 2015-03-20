@@ -26,12 +26,16 @@ footer {
 		text-align: center;
 		display: block;
 
+
+
 		@include breakpoint($med){
 			display: inline-block;
 			position: absolute;
 			right: 3%;
 			bottom: 12px;
-
+			padding-bottom: .25em;
+			border-bottom: 1px solid $gray;
+			
 			@include transition(color, .4s, ease);
 
 			&:hover{

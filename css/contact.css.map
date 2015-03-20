@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AACC,eAAO;EACN,SAAS,EAAE,KAAK;AAGjB,yBAAiB;EAChB,SAAS,EAAE,IAAI",
+"mappings": "AACC,eAAO;EACN,SAAS,EAAE,KAAK;AAGjB,wBAAgB;EACf,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,GAAG;EAChB,cAAc,EAAE,KAAK",
 "sources": ["../scss/contact.scss"],
 "names": [],
 "file": "contact.css"

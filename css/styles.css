@@ -128,6 +128,8 @@ footer {
         position: absolute;
         right: 3%;
         bottom: 12px;
+        padding-bottom: .25em;
+        border-bottom: 1px solid #bdbdbd;
         -webkit-transition: color 0.4s ease;
         -moz-transition: color 0.4s ease;
         -ms-transition: color 0.4s ease;
@@ -252,19 +254,20 @@ h2 {
 .contact .banner {
   background: url(../images/contactBanner.jpg) no-repeat right;
   background-size: contain;
-  margin-bottom: 3em;
-  padding-bottom: 4.5em; }
+  margin-bottom: 3em; }
   @media (min-width: 590px) {
     .contact .banner {
-      margin-bottom: 5em;
-      padding-bottom: 7.5em; } }
-  @media (min-width: 535px) {
-    .contact .banner h2 {
-      font-size: 2.2em; } }
-  @media (min-width: 750px) {
-    .contact .banner h2 {
-      font-size: 2.5em;
-      margin-bottom: 2em; } }
+      background-size: contain;
+      margin-bottom: 5em; } }
+  .contact .banner h2 {
+    margin-bottom: 2.5em; }
+    @media (min-width: 535px) {
+      .contact .banner h2 {
+        font-size: 2.2em; } }
+    @media (min-width: 750px) {
+      .contact .banner h2 {
+        font-size: 2.5em;
+        margin-bottom: 4em; } }
 
 .banner p {
   font-size: 1.2em; }
@@ -338,9 +341,9 @@ h2 {
     position: absolute;
     left: 0;
     top: 0;
-    font-size: 1.1em;
+    font-size: 1.25em;
     letter-spacing: 4px;
-    color: #bdbdbd;
+    color: black;
     -webkit-transition: color 0.4s ease;
     -moz-transition: color 0.4s ease;
     -ms-transition: color 0.4s ease;
@@ -348,14 +351,14 @@ h2 {
     transition: color 0.4s ease; }
     @media (min-width: 535px) {
       .prevNext .prev:hover {
-        color: black; } }
+        color: #bdbdbd; } }
   .prevNext .next {
     position: absolute;
     right: 0;
     top: 0;
-    font-size: 1.1em;
+    font-size: 1.25em;
     letter-spacing: 4px;
-    color: #bdbdbd;
+    color: black;
     -webkit-transition: color 0.4s ease;
     -moz-transition: color 0.4s ease;
     -ms-transition: color 0.4s ease;
@@ -363,7 +366,7 @@ h2 {
     transition: color 0.4s ease; }
     @media (min-width: 535px) {
       .prevNext .next:hover {
-        color: black; } }
+        color: #bdbdbd; } }
 
 .process p {
   line-height: 1.5; }
@@ -379,8 +382,10 @@ h2 {
     margin: 0; }
 
 .contact .intro {
-  font-size: 1.1em; }
-.contact .projectDescr li {
-  font-size: .8em; }
+  font-size: 1.2em; }
+.contact .projectDescr a {
+  font-size: 1.2em;
+  font-weight: 300;
+  padding-bottom: .05em; }
 
 /*# sourceMappingURL=styles.css.map */
